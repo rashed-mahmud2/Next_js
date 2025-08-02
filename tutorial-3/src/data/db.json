@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Product 1",
+      "price": 500,
+      "descirption": "Product 1 description",
+      "image": "https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg"
+    },
+    {
+      "id": "2",
+      "title": "Product 2",
+      "price": 250,
+      "descirption": "Product 2 description",
+      "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg"
+    },
+    {
+      "id": "95ef",
+      "title": "product 3",
+      "description": "this is descirption",
+      "price": 455,
+      "image": "https://res.cloudinary.com/dcdga3gke/image/upload/v1754138233/btxggapvm3npqdufxcw3.jpg"
+    },
+    {
+      "id": "1c7a",
+      "title": "adfa",
+      "description": "fadffd",
+      "price": 45,
+      "image": "https://res.cloudinary.com/dcdga3gke/image/upload/v1754138260/pqibvyfknkgce5tsxxbp.jpg"
+    },
+    {
+      "id": "a523",
+      "title": "adfa",
+      "description": "fadffd",
+      "price": 45,
+      "image": "https://res.cloudinary.com/dcdga3gke/image/upload/v1754138260/pqibvyfknkgce5tsxxbp.jpg"
+    },
+    {
+      "id": "9dbb",
+      "title": "ekkebare notun thambnail",
+      "description": "notun thambnail er description",
+      "price": 35,
+      "image": "https://res.cloudinary.com/dcdga3gke/image/upload/v1754138860/gt5yrnssuayagobs7cer.webp"
+    },
+    {
+      "id": "b202",
+      "title": "ekkebare notun thambnail",
+      "description": "notun thambnail er description",
+      "price": 35,
+      "image": "https://res.cloudinary.com/dcdga3gke/image/upload/v1754138860/gt5yrnssuayagobs7cer.webp"
+    },
+    {
+      "id": "911b",
+      "title": "tomato ",
+      "description": "deshi tatka tometo khete khub moja",
+      "price": "256",
+      "image": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"
+    },
+    {
+      "id": "ff8a",
+      "title": "Tometo salad",
+      "description": "tometor slad khete khub moja",
+      "price": "66",
+      "image": "https://images.pexels.com/photos/373019/pexels-photo-373019.jpeg"
+    },
+    {
+      "id": "a4d4",
+      "title": "bla bla bla ",
+      "description": "dummy description",
+      "price": "45454",
+      "image": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg"
+    },
+    {
+      "id": "9c70",
+      "title": "i phone",
+      "description": "dummy description",
+      "price": 1225,
+      "image": "https://m.media-amazon.com/images/I/61Ml-IP+73L.jpg"
+    },
+    {
+      "id": "5165",
+      "title": "I Phone 24",
+      "description": "this is descirption",
+      "price": 2000,
+      "image": "https://inventstore.in/wp-content/uploads/2023/04/iPhone_13_Blue.webp"
+    }
+  ]
+}

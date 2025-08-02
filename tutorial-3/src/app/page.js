@@ -1,27 +1,45 @@
-import Link from "next/link";
-import Counter from "./components/Counter";
+import ProductCard from "@/app/components/ProductCard";
 
-export default async function Home() {
+const Shop = async () => {
+  const res = await fetch(`http://localhost:8000/products`, {
+    next: { tags: ["products"] },
+  });
+  const products = await res.json();
   console.log("I am being rendered");
 
-  const res = await fetch(
-    `https://jsonplaceholder.typicode.com/todos?_limit=5`
-  );
-
-  const todos = await res.json();
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className=" text-4xl text-yellow-100">I am home page with jsx</h1>
-      <ul className=" list-disc">
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.title}</li>
-        ))}
-      </ul>
-      <Counter />
-      <Link className="underline" href={"/about"}>
-        Go to about page
-      </Link>
+    <div className="max-w-7xl mx-auto">
+      <div className="page-banner">
+        <div className="page-banner__details">
+          <div className=" bg-green-600 p-5">
+            <h1 className="text-8xl font-semibold text-white text-center">
+              Our E-commerce Website
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div className="section">
+        <div className="container">
+          <div className="section__head">
+            <div className="product__details__title">
+              <h2 className="text-white bg-amber-700 text-4xl text-center p-6">
+                All Products
+              </h2>
+            </div>
+          </div>
+          {products?.length > 0 && (
+            <div className="section__content">
+              <div className=" grid grid-cols-3 gap-5">
+                {products?.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default Shop;

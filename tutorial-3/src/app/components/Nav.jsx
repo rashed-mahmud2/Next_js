@@ -18,6 +18,10 @@ export default function Nav() {
           <li>
             <Link href={"/post-list"}>Post List</Link>
           </li>
+          <li>
+            <Link href={"/add-product"}>Add Product</Link>
+          </li>
+
         </ul>
       </nav>
     </div>
