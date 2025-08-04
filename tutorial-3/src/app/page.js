@@ -1,10 +1,10 @@
 import ProductCard from "@/app/components/ProductCard";
 
 const Shop = async () => {
-  const res = await fetch(`http://localhost:8000/products`, {
+  const res = await fetch(`http://localhost:3000/api/product`, {
     next: { tags: ["products"] },
   });
-  const products = await res.json();
+  const { data: products } = await res.json();
   console.log("I am being rendered");
 
   return (
@@ -31,7 +31,7 @@ const Shop = async () => {
             <div className="section__content">
               <div className=" grid grid-cols-3 gap-5">
                 {products?.map((product) => (
-                  <ProductCard key={product.id} product={product} />
+                  <ProductCard key={product._id} product={product} />
                 ))}
               </div>
             </div>
